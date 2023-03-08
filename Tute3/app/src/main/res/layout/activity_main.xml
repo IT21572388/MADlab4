@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnDivide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="12dp"
+        android:width="180dp"
+        android:height="180dp"
+        android:backgroundTint="#E67A57"
+        android:onClick="buttonClick"
+        android:text="/"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnMultiply"
+        app:layout_constraintTop_toBottomOf="@+id/btnMinus" />
+
+    <Button
+        android:id="@+id/btnPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="8dp"
+        android:width="180dp"
+        android:height="180dp"
+        android:backgroundTint="#D69898"
+        android:onClick="buttonClick"
+        android:text="+"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnMultiply"
+        app:layout_constraintEnd_toStartOf="@+id/btnMinus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/no2" />
+
+    <Button
+        android:id="@+id/btnMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="1dp"
+        android:width="180dp"
+        android:height="180dp"
+        android:backgroundTint="#4A2127"
+        android:onClick="buttonClick"
+        android:text="-"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnDivide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnPlus"
+        app:layout_constraintTop_toBottomOf="@+id/no2" />
+
+    <Button
+        android:id="@+id/btnMultiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="1dp"
+        android:width="180dp"
+        android:height="180dp"
+        android:backgroundTint="#F1C43F"
+        android:onClick="buttonClick"
+        android:text="X"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnDivide"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlus" />
+
+    <TextView
+        android:id="@+id/n1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="268dp"
+        android:layout_marginBottom="9dp"
+        android:text="Number 01"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/no1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/n2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="268dp"
+        android:layout_marginBottom="10dp"
+        android:text="Number 02"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/no2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/no1" />
+
+    <EditText
+        android:id="@+id/no1"
+        android:layout_width="352dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/n2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/n1" />
+
+    <EditText
+        android:id="@+id/no2"
+        android:layout_width="363dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="52dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnPlus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/n2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
